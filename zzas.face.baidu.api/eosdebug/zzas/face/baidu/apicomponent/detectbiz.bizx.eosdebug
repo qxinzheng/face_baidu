@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+    <case1>
+        <root>
+            <data>
+                <param1 __parameterDataType="sdo:zzas.face.baidu.api.face_dataset.DetectParams" __type="sdo:zzas.face.baidu.api.face_dataset.DetectParams">
+                    <image __parameterDataType="String" __type="java:java.lang.String"/>
+                    <max_face_num __parameterDataType="Int" __type="java:int"/>
+                    <face_fields __parameterDataType="String" __type="java:java.lang.String"/>
+                </param1>
+            </data>
+            <MUOContext>
+                <userObject __parameterDataType="java:com.eos.data.datacontext.UserObject" __type="java:com.eos.data.datacontext.UserObject">
+                    <userId __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <userMail __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <userName __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <userOrgId __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <userOrgName __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <userRealName __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <uniqueId __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <userRemoteIP __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                    <sessionId __parameterDataType="java:java.lang.String" __type="java:java.lang.String"/>
+                </userObject>
+            </MUOContext>
+        </root>
+    </case1>
+</root>

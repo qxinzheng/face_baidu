@@ -1,0 +1,50 @@
+<map>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.verifyUserbiz(zzas.face.baidu.api.face_dataset.VerifyUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;verifyUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;VerifyUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.verifyUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.VerifyUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.VerifyUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.identifyUserbiz(zzas.face.baidu.api.face_dataset.IdentifyUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;identifyUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;identifyUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.identifyUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.IdentifyUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.IdentifyUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.deleteUserbiz(zzas.face.baidu.api.face_dataset.DeleteUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;deleteUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;deleteUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.deleteUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.DeleteUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.DeleteUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.getUserbiz(zzas.face.baidu.api.face_dataset.GetUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.getUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.GetUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.GetUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.getGroupListbiz(zzas.face.baidu.api.face_dataset.GetGroupListParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getGroupListbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getGroupListbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.getGroupListbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.GetGroupListParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.GetGroupListData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.addUserbiz(zzas.face.baidu.api.face_dataset.AddUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;addUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.addUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.AddUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.AddUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.detectbiz(zzas.face.baidu.api.face_dataset.DetectParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;detectbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;detectbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.detectbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.DetectParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.DetectData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.updateUserbiz(zzas.face.baidu.api.face_dataset.UpdateUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;updateUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;updateUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.updateUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.UpdateUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.UpdateUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.getGroupUsersbiz(zzas.face.baidu.api.face_dataset.GetGroupUsersParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;getGroupUsersbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;getGroupUsersbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.getGroupUsersbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.GetGroupUsersParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.GetGroupUsersData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.matchbiz(zzas.face.baidu.api.face_dataset.MatchParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;matchbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;matchbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.matchbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.MatchParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.MatchData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>apicomponent</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;apicomponent.componentType&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;apicomponent&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent&lt;/html&gt;</string>
+  </entry>
+  <entry>
+    <string>zzas.face.baidu.apicomponent.addGroupUserbiz(zzas.face.baidu.api.face_dataset.AddGroupUserParams)</string>
+    <string>&lt;html&gt;&lt;b&gt;Name:&lt;/b&gt;addGroupUserbiz&lt;br&gt;&lt;b&gt;Display Name:&lt;/b&gt;addGroupUserbiz&lt;br&gt;&lt;b&gt;Namespace:&lt;/b&gt;zzas.face.baidu.apicomponent.addGroupUserbiz&lt;dl&gt;&lt;dt&gt;Parameters:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;param1(zzas.face.baidu.api.face_dataset.AddGroupUserParams):&lt;/b&gt;&lt;/dd&gt;&lt;dt&gt;Return:&lt;/dt&gt;&lt;dd&gt;&lt;b&gt;out1(zzas.face.baidu.api.face_dataset.AddGroupUserData):&lt;/b&gt;&lt;/dd&gt;&lt;/html&gt;</string>
+  </entry>
+</map>

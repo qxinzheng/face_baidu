@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Require-Bundle: 
+eos-webCtxPath: face/baidu_api
+Bundle-Vendor: qxz
+Bundle-Version: 1.0.0
+Bundle-Name: zzas.face.baidu.api
+Bundle-Description: 
+Bundle-SymbolicName: zzas.face.baidu.api
+

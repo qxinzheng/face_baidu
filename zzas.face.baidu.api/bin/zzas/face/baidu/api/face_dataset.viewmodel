@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<viewModelSet author="qxz" displayName="face_dataset" id="zzas.face.baidu.api.face_dataset">
+    <viewModel author="qxz" displayName="DetectParams" entityName="zzas.face.baidu.api.face_dataset.DetectParams" id="DetectParams">
+        <field dataType="String" dict="false" entityField="image" id="image" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="max_face_num" id="max_face_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="face_fields" id="face_fields" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes" id="imageBytes" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DetectData" entityName="zzas.face.baidu.api.face_dataset.DetectData" id="DetectData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result.expression" id="result.expression" label="property4">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.face_probability" id="result.face_probability" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result.glasses" id="result.glasses" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.beauty" id="result.beauty" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.expression_probability" id="result.expression_probability" label="property5">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="result.race" id="result.race" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result.rotation_angle" id="result.rotation_angle" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.yaw" id="result.yaw" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.roll" id="result.roll" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.gender_probability" id="result.gender_probability" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.age" id="result.age" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="result.gender" id="result.gender" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.glasses_probability" id="result.glasses_probability" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.race_probability" id="result.race_probability" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.pitch" id="result.pitch" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="Entity" entityName="zzas.face.baidu.api.face_dataset.DetectDataResult" id="DetectDataResult">
+        <field dataType="Double" dict="false" entityField="age" id="age" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="beauty" id="beauty" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="face_probability" id="face_probability" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="rotation_angle" id="rotation_angle" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="yaw" id="yaw" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="pitch" id="pitch" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="roll" id="roll" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="expression" id="expression" label="property4">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="expression_probability" id="expression_probability" label="property5">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="gender" id="gender" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="gender_probability" id="gender_probability" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="glasses" id="glasses" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="glasses_probability" id="glasses_probability" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="race" id="race" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="race_probability" id="race_probability" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="location.height" id="location.height" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="location.width" id="location.width" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="location.left" id="location.left" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="location.top" id="location.top" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="faceshape.probability" id="faceshape.probability" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="faceshape.type" id="faceshape.type" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="landmark.y" id="landmark.y" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="landmark.x" id="landmark.x" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="landmark72.y" id="landmark72.y" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="landmark72.x" id="landmark72.x" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="Entity" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultLocation" id="DetectDataResultLocation">
+        <field dataType="Int" dict="false" entityField="left" id="left" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="top" id="top" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="width" id="width" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="height" id="height" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DetectDataResultFaceshape" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultFaceshape" id="DetectDataResultFaceshape">
+        <field dataType="String" dict="false" entityField="type" id="type" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="probability" id="probability" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DetectDataResultLandmark" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultLandmark" id="DetectDataResultLandmark">
+        <field dataType="Int" dict="false" entityField="x" id="x" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="y" id="y" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DetectDataResultLandmark72" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultLandmark72" id="DetectDataResultLandmark72">
+        <field dataType="Int" dict="false" entityField="x" id="x" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="y" id="y" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DetectDataResultQualities" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultQualities" id="DetectDataResultQualities">
+        <field dataType="Double" dict="false" entityField="blur" id="blur" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="illumination" id="illumination" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="completeness" id="completeness" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.left_eye" id="occlusion.left_eye" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.chin" id="occlusion.chin" label="property6">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.mouth" id="occlusion.mouth" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.right_cheek" id="occlusion.right_cheek" label="property5">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.left_cheek" id="occlusion.left_cheek" label="property4">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.nose" id="occlusion.nose" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="occlusion.right_eye" id="occlusion.right_eye" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="type.cartoon" id="type.cartoon" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="type.human" id="type.human" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DetectDataResultQualitiesOcclusion" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultQualitiesOcclusion" id="DetectDataResultQualitiesOcclusion">
+        <field dataType="Double" dict="false" entityField="left_eye" id="left_eye" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="right_eye" id="right_eye" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="nose" id="nose" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="mouth" id="mouth" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="left_cheek" id="left_cheek" label="property4">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="right_cheek" id="right_cheek" label="property5">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="chin" id="chin" label="property6">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="Entity" entityName="zzas.face.baidu.api.face_dataset.DetectDataResultQualitiesType" id="DetectDataResultQualitiesType">
+        <field dataType="Double" dict="false" entityField="human" id="human" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="cartoon" id="cartoon" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="MatchParams" entityName="zzas.face.baidu.api.face_dataset.MatchParams" id="MatchParams">
+        <field dataType="String" dict="false" entityField="image1" id="image1" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="image2" id="image2" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_fields" id="ext_fields" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="image_liveness" id="image_liveness" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="types" id="types" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes1" id="imageBytes1" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes2" id="imageBytes2" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="MatchData" entityName="zzas.face.baidu.api.face_dataset.MatchData" id="MatchData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result.index_j" id="result.index_j" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result.index_i" id="result.index_i" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result.score" id="result.score" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_info.faceliveness" id="ext_info.faceliveness" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_info.qualities" id="ext_info.qualities" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="MatchDataResult" entityName="zzas.face.baidu.api.face_dataset.MatchDataResult" id="MatchDataResult">
+        <field dataType="Int" dict="false" entityField="index_i" id="index_i" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="index_j" id="index_j" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="score" id="score" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="Entity" entityName="zzas.face.baidu.api.face_dataset.MatchDataResultExt_info" id="MatchDataResultExt_info">
+        <field dataType="String" dict="false" entityField="qualities" id="qualities" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="faceliveness" id="faceliveness" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="IdentifyUserParams" entityName="zzas.face.baidu.api.face_dataset.IdentifyUserParams" id="IdentifyUserParams">
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="image" id="image" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_fields" id="ext_fields" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="user_top_num" id="user_top_num" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes" id="imageBytes" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="IdentifyUserData" entityName="zzas.face.baidu.api.face_dataset.IdentifyUserData" id="IdentifyUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_info.faceliveness" id="ext_info.faceliveness" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="IdentifyUserDataExt_info" entityName="zzas.face.baidu.api.face_dataset.IdentifyUserDataExt_info" id="IdentifyUserDataExt_info">
+        <field dataType="String" dict="false" entityField="faceliveness" id="faceliveness" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="IdentifyUserResult" entityName="zzas.face.baidu.api.face_dataset.IdentifyUserResult" id="IdentifyUserResult">
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="user_info" id="user_info" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="scores" id="scores" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="VerifyUserParams" entityName="zzas.face.baidu.api.face_dataset.VerifyUserParams" id="VerifyUserParams">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="image" id="image" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="top_num" id="top_num" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_fields" id="ext_fields" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes" id="imageBytes" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="VerifyUserData" entityName="zzas.face.baidu.api.face_dataset.VerifyUserData" id="VerifyUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Double" dict="false" entityField="result" id="result" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="ext_info.faceliveness" id="ext_info.faceliveness" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="VerifyUserDataExt_info" entityName="zzas.face.baidu.api.face_dataset.VerifyUserDataExt_info" id="VerifyUserDataExt_info">
+        <field dataType="String" dict="false" entityField="faceliveness" id="faceliveness" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="AddUserParams" entityName="zzas.face.baidu.api.face_dataset.AddUserParams" id="AddUserParams">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="user_info" id="user_info" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="image" id="image" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="action_type" id="action_type" label="property4">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes" id="imageBytes" label="property5">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="AddUserData" entityName="zzas.face.baidu.api.face_dataset.AddUserData" id="AddUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="UpdateUserParams" entityName="zzas.face.baidu.api.face_dataset.UpdateUserParams" id="UpdateUserParams">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="user_info" id="user_info" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="image" id="image" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="action_type" id="action_type" label="property4">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Byte" dict="false" entityField="imageBytes" id="imageBytes" label="property5">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="UpdateUserData" entityName="zzas.face.baidu.api.face_dataset.UpdateUserData" id="UpdateUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DeleteUserParams" entityName="zzas.face.baidu.api.face_dataset.DeleteUserParams" id="DeleteUserParams">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="DeleteUserData" entityName="zzas.face.baidu.api.face_dataset.DeleteUserData" id="DeleteUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetUserParams" entityName="zzas.face.baidu.api.face_dataset.GetUserParams" id="GetUserParams">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetUserData" entityName="zzas.face.baidu.api.face_dataset.GetUserData" id="GetUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="result.user_info" id="result.user_info" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="result.uid" id="result.uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="result.group_id" id="result.group_id" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetUserDataResult" entityName="zzas.face.baidu.api.face_dataset.GetUserDataResult" id="GetUserDataResult">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="user_info" id="user_info" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetGroupListParams" entityName="zzas.face.baidu.api.face_dataset.GetGroupListParams" id="GetGroupListParams">
+        <field dataType="Int" dict="false" entityField="start" id="start" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="end" id="end" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetGroupListData" entityName="zzas.face.baidu.api.face_dataset.GetGroupListData" id="GetGroupListData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="result" id="result" label="property3">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetGroupUsersParams" entityName="zzas.face.baidu.api.face_dataset.GetGroupUsersParams" id="GetGroupUsersParams">
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="start" id="start" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="end" id="end" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="GetGroupUsersData" entityName="zzas.face.baidu.api.face_dataset.GetGroupUsersData" id="GetGroupUsersData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="Int" dict="false" entityField="result_num" id="result_num" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="Entity" entityName="zzas.face.baidu.api.face_dataset.GetGroupUsersDataResult" id="GetGroupUsersDataResult">
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="user_info" id="user_info" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="AddGroupUserParams" entityName="zzas.face.baidu.api.face_dataset.AddGroupUserParams" id="AddGroupUserParams">
+        <field dataType="String" dict="false" entityField="src_group_id" id="src_group_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="group_id" id="group_id" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="uid" id="uid" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+    <viewModel author="qxz" displayName="Entity" entityName="zzas.face.baidu.api.face_dataset.AddGroupUserData" id="AddGroupUserData">
+        <field dataType="Long" dict="false" entityField="log_id" id="log_id" label="property0">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_code" id="error_code" label="property1">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+        <field dataType="String" dict="false" entityField="error_msg" id="error_msg" label="property2">
+            <view type="write"/>
+            <edit name="" type="text"/>
+        </field>
+    </viewModel>
+</viewModelSet>

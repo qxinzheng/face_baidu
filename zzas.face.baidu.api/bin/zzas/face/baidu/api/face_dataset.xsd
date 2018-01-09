@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="zzas.face.baidu.api.face_dataset" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="zzas.face.baidu.api.face_dataset">
+    <xs:complexType name="DetectParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="max_face_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="face_fields" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes" nillable="true" type="xs:byte"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="DetectDataResult"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResult">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="age" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="beauty" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="face_probability" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="rotation_angle" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="yaw" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="pitch" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="roll" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="expression" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="expression_probability" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="gender" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="gender_probability" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="glasses" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="glasses_probability" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="race" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="race_probability" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="location" nillable="true" type="DetectDataResultLocation"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="faceshape" nillable="true" type="DetectDataResultFaceshape"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="landmark" nillable="true" type="DetectDataResultLandmark"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="landmark72" nillable="true" type="DetectDataResultLandmark72"/>
+            <xs:element minOccurs="0" name="qualities" nillable="true" type="DetectDataResultQualities"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultLocation">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="left" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="top" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="width" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="height" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultFaceshape">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="type" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="probability" nillable="true" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultLandmark">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="x" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="y" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultLandmark72">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="x" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="y" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultQualities">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="blur" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="illumination" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="completeness" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="occlusion" nillable="true" type="DetectDataResultQualitiesOcclusion"/>
+            <xs:element minOccurs="0" name="type" nillable="true" type="DetectDataResultQualitiesType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultQualitiesOcclusion">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="left_eye" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="right_eye" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="nose" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="mouth" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="left_cheek" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="right_cheek" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="chin" nillable="true" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DetectDataResultQualitiesType">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="human" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="cartoon" nillable="true" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MatchParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="image1" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="image2" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext_fields" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="image_liveness" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="types" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes1" nillable="true" type="xs:byte"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes2" nillable="true" type="xs:byte"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MatchData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="MatchDataResult"/>
+            <xs:element minOccurs="0" name="ext_info" nillable="true" type="MatchDataResultExt_info"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MatchDataResult">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="index_i" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="index_j" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="score" nillable="true" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MatchDataResultExt_info">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="qualities" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="faceliveness" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="IdentifyUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext_fields" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="user_top_num" nillable="true" type="xs:int"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes" nillable="true" type="xs:byte"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="IdentifyUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext_info" nillable="true" type="IdentifyUserDataExt_info"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="xs:anySimpleType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="IdentifyUserDataExt_info">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="faceliveness" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="IdentifyUserResult">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="user_info" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="scores" nillable="true" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="VerifyUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="top_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="ext_fields" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes" nillable="true" type="xs:byte"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="VerifyUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="xs:double"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="ext_info" nillable="true" type="VerifyUserDataExt_info"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="VerifyUserDataExt_info">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="faceliveness" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AddUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="user_info" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="action_type" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes" nillable="true" type="xs:byte"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AddUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="UpdateUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="user_info" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="image" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="action_type" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="imageBytes" nillable="true" type="xs:byte"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="UpdateUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DeleteUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DeleteUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="GetUserDataResult"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetUserDataResult">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="user_info" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetGroupListParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="start" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="end" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetGroupListData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetGroupUsersParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="start" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="end" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetGroupUsersData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="result_num" nillable="true" type="xs:int"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="xs:anySimpleType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GetGroupUsersDataResult">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="user_info" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AddGroupUserParams">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="src_group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="group_id" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="uid" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AddGroupUserData">
+        <xs:sequence>
+            <xs:any minOccurs="0"/>
+            <xs:element minOccurs="0" name="log_id" nillable="true" type="xs:long"/>
+            <xs:element minOccurs="0" name="error_code" nillable="true" type="xs:string"/>
+            <xs:element minOccurs="0" name="error_msg" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
